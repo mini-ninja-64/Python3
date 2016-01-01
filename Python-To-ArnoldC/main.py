@@ -20,11 +20,11 @@ for line in pyFile:
     elif ((("=") in formattedLine)) and (not("if") in formattedLine) and (not("==") in formattedLine): #variable decleration
         varName=formattedLine.split('=')[0]
         arnCEquiv=arnCEquiv + 'CHRISTMAS TREE ' + varName + '\n'
-        arnCEquiv=arnCEquiv + '\t' + 'YOU SET US UP ' + (formattedLine.split('=')[1]) + '\n' + '\n'
+        arnCEquiv=arnCEquiv + '\t' + 'YOU SET US UP ' + (formattedLine.split('=')[1]) + '\n'
 
 
     if not line.strip():
-        print("blank line")
+        print("")
     else:
         if not (arnCEquiv == ""):
             print("")
